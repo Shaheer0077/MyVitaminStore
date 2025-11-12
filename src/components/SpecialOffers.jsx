@@ -3,16 +3,16 @@ import { FaStar, FaShoppingCart } from "react-icons/fa";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 import patternImg from "../assets/pattern.jpg";
-import product1 from "../assets/product1.jpg";
-import product2 from "../assets/product2.jpg";
-import product3 from "../assets/product3.jpg";
-import product4 from "../assets/product4.jpg";
-import product5 from "../assets/product5.jpg";
-import product6 from "../assets/product6.jpg";
-import product7 from "../assets/product7.jpg";
-import product8 from "../assets/product8.jpg";
-import product9 from "../assets/product9.jpg";
-import product10 from "../assets/product10.jpg";
+import product1 from "../assets/Product1.jpg";
+import product2 from "../assets/Product2.jpg";
+import product3 from "../assets/Product3.jpg";
+import product4 from "../assets/Product4.jpg";
+import product5 from "../assets/Product5.jpg";
+import product6 from "../assets/Product6.jpg";
+import product7 from "../assets/Product7.jpg";
+import product8 from "../assets/Product8.jpg";
+import product9 from "../assets/Product9.jpg";
+import product10 from "../assets/Product10.jpg";
 
 const products = [
   { img: product1, discount: "-11%", title: "Natural Factors Ultimate Multi Probiotic 12 Billion CFUs, 60 Ct", reviews: 23, oldPrice: "PKR 9,500", newPrice: "PKR 8,500" },
