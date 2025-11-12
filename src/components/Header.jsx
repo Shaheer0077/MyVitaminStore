@@ -121,7 +121,7 @@ export default function Header({ cartCount = 0, onSearch }) {
                         />
                         <button
                             type="submit"
-                            className="px-6 py-2 mr-0.5 mt-0.5 mb-0.5 bg-[#43b39d] text-gray-50 font-semibold text-sm uppercase tracking-wide cursor-pointer "
+                            className="px-6 py-2 mr-0.5 mt-0.5 mb-0.5 bg-[#48ad92] text-gray-50 font-semibold text-sm uppercase tracking-wide cursor-pointer "
                         >
                             search
                         </button>

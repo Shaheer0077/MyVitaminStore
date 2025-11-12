@@ -54,7 +54,7 @@ const QuickShop = () => {
       {/* Title Section */}
       <div className="relative flex justify-between items-center my-12 px-4 sm:px-0">
         <div className="relative text-left sm:text-center w-full">
-          <h2 className="text-2xl sm:text-4xl mb-4 font-semibold text-[#4cbfa6] font-[Plus Jakarta Sans]">
+          <h2 className="text-2xl sm:text-4xl mb-4 font-semibold text-[#48ad92] font-[Plus Jakarta Sans]">
             Quick Shop
           </h2>
           <img
@@ -102,7 +102,7 @@ const QuickShop = () => {
             onClick={() => handleDotClick(index)}
             className={`w-3 h-3 cursor-pointer rounded-full transition-all duration-300 ${
               Math.floor(startIndex === index ) 
-                ? "bg-[#4cbfa6]"
+                ? "bg-[#48ad92]"
                 : "bg-[#4cbfa6]/40"
             }`}
           ></button>
@@ -121,13 +121,13 @@ const QuickShop = () => {
         </div>
 
         {/* Right Grid */}
-        <div className="md:w-[40%] w-full grid grid-cols-2 gap-4">
+        <div className="md:w-[40%] w-full grid grid-cols-2 gap-6">
           {[suppImg2, suppImg3, suppImg4, suppImg5].map((img, i) => (
             <img
               key={i}
               src={img}
               alt={`Supp ${i}`}
-              className="w-full h-[180px] md:h-[267.5px] object-cover"
+              className="w-full h-[180px] md:h-[263.5px] object-cover"
             />
           ))}
         </div>

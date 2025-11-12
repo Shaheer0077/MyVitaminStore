@@ -60,7 +60,7 @@ const PopularBrands = () => {
       {/* Title Section */}
       <div className="relative flex justify-between items-center my-12 px-4 sm:px-0">
         <div className="relative text-left sm:text-center w-full">
-          <h2 className="text-2xl sm:text-4xl mb-4 font-semibold text-[#4cbfa6] font-[Plus Jakarta Sans]">
+          <h2 className="text-2xl sm:text-4xl mb-4 font-semibold text-[#48ad92] font-[Plus Jakarta Sans]">
             Popular Brands
           </h2>
           <img
@@ -70,7 +70,7 @@ const PopularBrands = () => {
           />
           <a
             href="#"
-            className="absolute right-4 sm:right-50 top-2 sm:top-0 font-bold text-gray-800 underline text-sm hover:text-[#4cbfa6] transition-colors"
+            className="absolute right-4 sm:right-50 top-1/2 -translate-y-1/2 font-bold text-gray-800 underline text-sm hover:text-[#48ad92] transition-colors"
           >
             View all
           </a>

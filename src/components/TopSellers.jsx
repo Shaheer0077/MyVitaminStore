@@ -139,7 +139,7 @@ const TopSellers = () => {
             {/* Title Section */}
             <div className="relative flex justify-between items-center my-12 px-4 sm:px-0">
                 <div className="relative text-left sm:text-center w-full">
-                    <h2 className="text-2xl sm:text-4xl mb-4 font-semibold text-[#4cbfa6] font-[Plus Jakarta Sans]">
+                    <h2 className="text-2xl sm:text-4xl mb-4 font-semibold text-[#48ad92] font-[Plus Jakarta Sans]">
                        TopSellers
                     </h2>
                     <img
@@ -150,7 +150,7 @@ const TopSellers = () => {
                 </div>
                 <a
                     href="#"
-                    className="absolute right-4 sm:right-50 top-2 sm:top-0 font-bold text-gray-800 underline text-sm hover:text-[#4cbfa6] transition-colors"
+                    className="absolute right-4 sm:right-50 top-1/2 -translate-y-1/2 font-bold text-gray-800 underline text-sm hover:text-[#48ad92] transition-colors"
                 >
                     View all
                 </a>
@@ -190,7 +190,7 @@ const TopSellers = () => {
 
                                 {/* Add to Cart Button */}
                                 <button
-                                    className="absolute opacity-0 mt-40 group-hover:opacity-100 transition-all duration-300 bg-white border border-[#4cbfa6] text-[#4cbfa6] font-medium px-3 py-1.5 sm:px-4 sm:py-2 rounded-full flex items-center gap-2 hover:bg-[#4cbfa6] hover:text-white"
+                                    className="absolute opacity-0 mt-40 group-hover:opacity-100 transition-all duration-300 bg-white border border-[#48ad92] text-[#48ad92] font-medium px-3 py-1.5 sm:px-4 sm:py-2 rounded-full flex items-center gap-2 hover:bg-[#4cbfa6] hover:text-white"
                                 >
                                     <FaShoppingCart />
                                     Add to Cart
@@ -198,18 +198,18 @@ const TopSellers = () => {
                             </div>
 
                             {/* Title */}
-                            <p className="text-center text-sm font-medium text-gray-800 mb-2 leading-tight hover:text-[#4cbfa6]">
+                            <p className="text-center text-sm font-medium text-gray-800 mb-2 leading-tight hover:text-[#48ad92]">
                                 {product.title}
                             </p>
 
                             {/* Rating */}
-                            <div className="flex justify-center items-center gap-1 text-[#009688] mb-1">
+                            <div className="flex justify-center items-center gap-1 text-[#48ad92] mb-1">
                                 {Array(5)
                                     .fill(0)
                                     .map((_, idx) => (
                                         <FaStar key={idx} size={14} />
                                     ))}
-                                <span className="text-xs sm:text-sm text-[#009688] ml-1">
+                                <span className="text-xs sm:text-sm text-[#48ad92] ml-1">
                                     {product.reviews} reviews
                                 </span>
                             </div>

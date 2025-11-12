@@ -140,7 +140,7 @@ const Footer = () => {
       {/* Bottom Line */}
       <div className=" border-t border-white mt-10 pt-6 text-center text-sm text-[#ffffffbf]">
         Copyright © 2025,{" "}
-        <span className="text-[#4cbfa6] hover:underline cursor-pointer">
+        <span className="text-[#48ad92] hover:underline cursor-pointer">
           My Vitamin Store
         </span>{" "}
         All rights reserved.

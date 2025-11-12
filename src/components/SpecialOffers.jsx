@@ -71,7 +71,7 @@ const SpecialOffers = () => {
       {/* Title */}
       <div className="relative flex justify-between items-center my-12 px-4 sm:px-0">
         <div className="relative text-left sm:text-center w-full">
-          <h2 className="text-2xl sm:text-4xl mb-4 font-semibold text-[#4cbfa6] font-[Plus Jakarta Sans]">
+          <h2 className="text-2xl sm:text-4xl mb-4 font-semibold text-[#48ad92] font-[Plus Jakarta Sans]">
             Special Offers
           </h2>
           <img
@@ -82,7 +82,7 @@ const SpecialOffers = () => {
         </div>
         <a
           href="#"
-          className="absolute right-4 sm:right-50 top-2 sm:top-0 font-bold text-gray-800 underline text-sm hover:text-[#4cbfa6] transition-colors"
+          className="absolute right-4 sm:right-50 top-1/2 -translate-y-1/2 font-bold text-gray-800 underline text-sm hover:text-[#48ad92] transition-colors"
         >
           View all
         </a>
@@ -94,7 +94,7 @@ const SpecialOffers = () => {
         {isHovered && (
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-[#4cbfa6] z-10 cursor-pointer"
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-[#48ad92] z-10 cursor-pointer"
           >
             <MdArrowBackIos className="text-gray-700" />
           </button>
@@ -119,25 +119,25 @@ const SpecialOffers = () => {
                   alt={product.title}
                   className="w-40 h-40 sm:w-50 sm:h-50 object-contain mb-3 transition-transform duration-300 group-hover:scale-105"
                 />
-                <button className="absolute opacity-0 mt-40 group-hover:opacity-100 transition-all duration-300 bg-white border border-[#4cbfa6] text-[#4cbfa6] font-medium px-3 py-1.5 sm:px-4 sm:py-2 rounded-full flex items-center gap-2 hover:bg-[#4cbfa6] hover:text-white">
+                <button className="absolute opacity-0 mt-40 group-hover:opacity-100 transition-all duration-300 bg-white border border-[#48ad92] text-[#48ad92] font-medium px-3 py-1.5 sm:px-4 sm:py-2 rounded-full flex items-center gap-2 hover:bg-[#4cbfa6] hover:text-white">
                   <FaShoppingCart />
                   Add to Cart
                 </button>
               </div>
 
               {/* Title */}
-              <p className="text-center text-xs sm:text-sm font-medium text-gray-800 mb-2 leading-tight hover:text-[#4cbfa6]">
+              <p className="text-center text-xs sm:text-sm font-medium text-gray-800 mb-2 leading-tight hover:text-[#48ad92]">
                 {product.title}
               </p>
 
               {/* Rating */}
-              <div className="flex justify-center items-center gap-1 text-[#009688] mb-1">
+              <div className="flex justify-center items-center gap-1 text-[#48ad92] mb-1">
                 {Array(5)
                   .fill(0)
                   .map((_, idx) => (
                     <FaStar key={idx} size={12} />
                   ))}
-                <span className="text-xs sm:text-sm text-[#009688] ml-1">
+                <span className="text-xs sm:text-sm text-[#48ad92] ml-1">
                   {product.reviews} reviews
                 </span>
               </div>
@@ -159,7 +159,7 @@ const SpecialOffers = () => {
         {isHovered && (
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-[#4cbfa6] z-10 cursor-pointer"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-#48ad92] z-10 cursor-pointer"
           >
             <MdArrowForwardIos className="text-gray-700" />
           </button>

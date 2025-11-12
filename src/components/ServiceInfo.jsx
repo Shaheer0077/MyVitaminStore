@@ -100,7 +100,7 @@ const ServiceInfo = () => {
               onClick={() => handleDotClick(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 currentIndex === index
-                  ? "bg-[#4cbfa6]"
+                  ? "bg-[#48ad92]"
                   : "bg-[#4cbfa6]/40"
               }`}
             ></button>
