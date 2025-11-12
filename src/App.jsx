@@ -8,7 +8,7 @@ import PopularBrands from './components/PopularBrands'
 import TopSellers from './components/TopSellers'
 import ServiceInfo from './components/ServiceInfo'
 import Footer from './components/Footer'
-import Supplements from './Pages/Supplements'
+// import Supplements from './Pages/Supplements'
 
 const App = () => {
   return (

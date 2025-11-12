@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-import MVSlogo from "../assets/MVSlogo.png"; // replace with your logo
+import MVSLogo from "../assets/MVSLogo.png"; // replace with your logo
 
 const Footer = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -117,7 +117,7 @@ const Footer = () => {
             >
               <div className="flex flex-col items-center md:items-center">
                 <img
-                  src={MVSlogo}
+                  src={MVSLogo}
                   alt="My Vitamin Store"
                   className="w-16 h-16 mb-4 object-contain"
                 />
