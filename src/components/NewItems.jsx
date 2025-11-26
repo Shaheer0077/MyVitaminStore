@@ -14,94 +14,24 @@ import NewItem7 from "../assets/NewItem7.jpg";
 import NewItem8 from "../assets/NewItem8.jpg";
 import NewItem9 from "../assets/NewItem9.jpg";
 import NewItem10 from "../assets/NewItem10.jpg";
+import { Link } from "react-router-dom";
 
 
 const products = [
-    {
-        img: NewItem1,
-        discount: "-11%",
-        title: "NOW Vitamin C 500mg Chewable Tablets (Orange), 100 Ct",
-        reviews: 23,
-        oldPrice: "PKR 4,950",
-        newPrice: "PKR 4,450",
-    },
-    {
-        img: NewItem2,
-        discount: "-17%",
-        title: "Applied Nutrition Creatine Monohydrate Powder (Strawberry & Raspberry), 250g",
-        reviews: 18,
-        oldPrice: "PKR 5,390",
-        newPrice: "PKR 4,450",
-    },
-    {
-        img: NewItem3,
-        discount: "-5%",
-        title: "Applied Nutrition Tri-Magnesium Powder (Tropical Vibes), 200g",
-        reviews: 18,
-        oldPrice: "PKR 3,790",
-        newPrice: "PKR 2,975",
-    },
-    {
-        img: NewItem4,
-        discount: "-15%",
-        title: "Natural Factors BioCoenzymated Methylfolate Folate + B12 1000/50 mcg, 60 Ct",
-        reviews: 9,
-        oldPrice: "PKR 3,990",
-        newPrice: "PKR 3,390",
-    },
-    {
-        img: NewItem5,
-        discount: "-35%",
-        title: "Applied Nutrition Hydration+ Electrolyte & Vitamin Powder (Lemon & Lime), 240g",
-        reviews: 4,
-        oldPrice: "PKR 1,673",
-        newPrice: "PKR 950",
-    },
-    {
-        img: NewItem6,
-        discount: "-10%",
-        title: "Webber Naturals Calcium Vitamin D3 500mg / 200 IU, 275 Ct",
-        reviews: 4,
-        oldPrice: "PKR 10,980",
-        newPrice: "PKR 9,882",
-    },
-    {
-        img: NewItem7,
-        discount: "-10%",
-        title: "Webber Naturals Lutein with Zeaxanthin 40mg, 60 Ct",
-        reviews: 4,
-        oldPrice: "PKR 4,950",
-        newPrice: "PKR 4,450",
-    },
-    {
-        img: NewItem8,
-        discount: "-10%",
-        title: "NOW Calcium D-Glucarate 500mg, 90 Ct",
-        reviews: 4,
-        oldPrice: "PKR 9,490",
-        newPrice: "PKR 8,541",
-    },
-    {
-        img: NewItem9,
-        discount: "-7%",
-        title: "NOW Coral Calcium 1000 mg, 100 Ct",
-        reviews: 4,
-        oldPrice: "PKR 9,100",
-        newPrice: "PKR  8,450",
-    },
-    {
-        img: NewItem10,
-        discount: "-10%",
-        title: "Natural Factors Vitamin B6 100mg, 90 Ct",
-        reviews: 4,
-        oldPrice: "PKR 13,980",
-        newPrice: "PKR 12,582",
-    },
+    { id: 11, img: NewItem1, discount: "-11%",rating:"4",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"90 Veg Capsules",Brand:"Webster Natural",sku:"733739006301",country:"USA", title: "NOW Vitamin C 500mg Chewable Tablets (Orange), 100 Ct", reviews: 23, oldPrice: "PKR 4,950", newPrice: "PKR 4,450" },
+    { id: 12, img: NewItem2, discount: "-17%",rating:"5",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"50 Veg Capsules",Brand:"NOW",sku:"5056555202142 ",country:"UK", title: "Applied Nutrition Creatine Monohydrate Powder (Strawberry & Raspberry), 250g", reviews: 18, oldPrice: "PKR 5,390", newPrice: "PKR 4,450" },
+    { id: 13, img: NewItem3, discount: "-5%",rating:"3", description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"60 Veg Capsules",Brand:"Natural Factors",sku:"733739012999",country:"USA",title: "Applied Nutrition Tri-Magnesium Powder (Tropical Vibes), 200g", reviews: 18, oldPrice: "PKR 3,790", newPrice: "PKR 2,975" },
+    { id: 14, img: NewItem4, discount: "-15%",rating:"5",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"70 Veg Capsules",Brand:"Webster Natural",sku:" 5056555206980",country:"UK", title: "Natural Factors BioCoenzymated Methylfolate Folate + B12 1000/50 mcg, 60 Ct", reviews: 9, oldPrice: "PKR 3,990", newPrice: "PKR 3,390" },
+    { id: 15, img: NewItem5, discount: "-35%",rating:"4",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"10 Veg Capsules",Brand:"NOW",sku:"068958012414",country:"Canada", title: "Applied Nutrition Hydration+ Electrolyte & Vitamin Powder (Lemon & Lime), 240g", reviews: 4, oldPrice: "PKR 1,673", newPrice: "PKR 950" },
+    { id: 16, img: NewItem6, discount: "-10%",rating:"5",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"30 Veg Capsules",Brand:"Natural Factors",sku:" 625273038743",country:"Canada", title: "Webber Naturals Calcium Vitamin D3 500mg / 200 IU, 275 Ct", reviews: 4, oldPrice: "PKR 10,980", newPrice: "PKR 9,882" },
+    { id: 17, img: NewItem7, discount: "-10%",rating:"5",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"40 Veg Capsules",Brand:"Webster Natural",sku:" 625273034561",country:"Canada", title: "Webber Naturals Lutein with Zeaxanthin 40mg, 60 Ct", reviews: 4, oldPrice: "PKR 4,950", newPrice: "PKR 4,450" },
+    { id: 18, img: NewItem8, discount: "-10%",rating:"4",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"60 Veg Capsules",Brand:"NOW",sku:"733739030979",country:"Canada", title: "NOW Calcium D-Glucarate 500mg, 90 Ct", reviews: 4, oldPrice: "PKR 9,490", newPrice: "PKR 8,541" },
+    { id: 19, img: NewItem9, discount: "-7%",rating:"3", description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"80 Veg Capsules",Brand:"Webster Natural",sku:"733739012999",country:"Canada",title: "NOW Coral Calcium 1000 mg, 100 Ct", reviews: 4, oldPrice: "PKR 9,100", newPrice: "PKR 8,450" },
+    { id: 20, img: NewItem10, discount: "-10%",rating:"2",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary...",packsize:"90 Veg Capsules",Brand:"Natural Factors",sku:"625273034561 ",country:"Canada", title: "Natural Factors Vitamin B6 100mg, 90 Ct", reviews: 4, oldPrice: "PKR 13,980", newPrice: "PKR 12,582" }
 ];
-
+export const newItemsProducts = products;
 
 const NewItems = () => {
-
     const [isHovered, setIsHovered] = useState(false);
     const [startIndex, setStartIndex] = useState(0);
     const [visibleCount, setVisibleCount] = useState(5);
@@ -171,7 +101,8 @@ const NewItems = () => {
                 {/* Products */}
                 <div className="flex justify-center  flex-wrap sm:flex-nowrap gap-4 sm:gap-6 overflow-hidden transition-transform duration-700 ease-in-out cursor-pointer">
                     {displayProducts.map((product, i) => (
-                        <div
+                        <Link
+                            to={`/product/${product.id}`}
                             key={i}
                             className="relative w-[45%] sm:w-[200px] flex flex-col items-center group"
                         >
@@ -223,7 +154,7 @@ const NewItems = () => {
                                     {product.newPrice}
                                 </span>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 

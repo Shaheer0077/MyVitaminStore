@@ -4,12 +4,16 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsTelephone } from 'react-icons/bs';
 import { LiaShoppingCartSolid } from 'react-icons/lia';
 import { RiMenu2Fill } from 'react-icons/ri';
+import { useCart } from "../context/CartContext";
+
+
 
 import logoSrc from '../assets/logo.svg';
 
-export default function Header({ cartCount = 0, onSearch }) {
+export default function Header({ onCartClick  }) {
     const [index, setIndex] = useState(0);
 
+    const { cart } = useCart();
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prev) => (prev + 1) % 3);
@@ -71,7 +75,7 @@ export default function Header({ cartCount = 0, onSearch }) {
             </div>
 
             {/* Header Section */}
-            <div className="sticky top-0 z-50 bg-white shadow-md">
+            <div className="sticky top-0 z-50 bg-white ">
             <div className="flex flex-wrap items-center justify-between px-4 py-2 sm:py-3 bg-white ">
 
                 {/* Left: Menu Icon */}
@@ -103,8 +107,10 @@ export default function Header({ cartCount = 0, onSearch }) {
 
                     {/* Cart — same element, just reorders */}
                     <div className="relative">
-                        <LiaShoppingCartSolid className="text-[30px] md:mr-6 mr-0" />
-                        <span className="absolute -top-2 -right-2 md:mr-6 mr-0 bg-black text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                        <button onClick={onCartClick}>
+                        <LiaShoppingCartSolid className="text-[30px] md:mr-6 mr-0 cursor-pointer" />
+                        <span className="absolute -top-2 -right-2 md:mr-6 mr-0 bg-black text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">  {cart.reduce((total, item) => total + item.qty, 0)}</span>
+                    </button>
                     </div>
                 </div>
                 {/* Middle: Search bar */}

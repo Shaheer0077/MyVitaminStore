@@ -13,19 +13,23 @@ import product7 from "../assets/Product7.jpg";
 import product8 from "../assets/Product8.jpg";
 import product9 from "../assets/Product9.jpg";
 import product10 from "../assets/Product10.jpg";
+import { Link } from "react-router-dom";
+
 
 const products = [
-  { img: product1, discount: "-11%", title: "Natural Factors Ultimate Multi Probiotic 12 Billion CFUs, 60 Ct", reviews: 23, oldPrice: "PKR 9,500", newPrice: "PKR 8,500" },
-  { img: product2, discount: "-17%", title: "Webber Naturals Omega 3-6-9 1200mg, 60 Ct", reviews: 18, oldPrice: "PKR 5,390", newPrice: "PKR 4,450" },
-  { img: product3, discount: "-5%", title: "Webber Naturals Omega-3 Fish Oil 1000mg, 60 Ct", reviews: 18, oldPrice: "PKR 3,790", newPrice: "PKR 10,175" },
-  { img: product4, discount: "-15%", title: "Natural Factors Magnesium Chelate 125mg, 90 Ct", reviews: 9, oldPrice: "PKR 3,990", newPrice: "PKR 3,390" },
-  { img: product5, discount: "-35%", title: "Get Alyve Women's Daily One A Day Multivitamin, 30 Ct", reviews: 4, oldPrice: "PKR 1,073", newPrice: "PKR 1,650" },
-  { img: product6, discount: "-10%", title: "Bundle Pack - Natural Factors Calcium & Magnesium Citrate with D3 + OsteoMove", reviews: 4, oldPrice: "PKR 10,980", newPrice: "PKR 9,882" },
-  { img: product7, discount: "-10%", title: "NOW Vitamin C 500mg Chewable Tablets (Orange), 100 Ct", reviews: 4, oldPrice: "PKR 4,950", newPrice: "PKR 4,450" },
-  { img: product8, discount: "-10%", title: "Bundle Pack - Natural Factors RxOmega-3 + Coenzyme CoQ10", reviews: 4, oldPrice: "PKR 9,490", newPrice: "PKR 8,541" },
-  { img: product9, discount: "-7%", title: "NOW B-100 Sustained Release Tablets, 100 Ct", reviews: 4, oldPrice: "PKR 9,100", newPrice: "PKR 8,450" },
-  { img: product10, discount: "-10%", title: "Bundle Pack - Webber Naturals MultiSure For Women + MultiSure For Men", reviews: 4, oldPrice: "PKR 13,980", newPrice: "PKR 12,582" },
+  { id: 1, img: product1, discount: "-11%",rating:"5",packsize:"90 Veg Capsules",Brand:"Natural Factors",sku:"733739006301",country:"USA", title: "Natural Factors Ultimate Multi Probiotic 12 Billion CFUs, 60 ", reviews: 23, oldPrice: "PKR 9,500", newPrice: "PKR 8,500",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
+  { id: 2, img: product2, discount: "-17%",rating:"5",packsize:"10 Veg Capsules",Brand:"NOW",sku:"733739006301",country:"USA", title: "Webber Naturals Omega 3-6-9 1200mg, 60 Ct", reviews: 18, oldPrice: "PKR 5,390", newPrice: "PKR 4,450" },
+  { id: 3, img: product3, discount: "-5%",rating:"5",packsize:"40 Veg Capsules",Brand:"Webster Natural",sku:"733739006301",country:"USA", title: "Webber Naturals Omega-3 Fish Oil 1000mg, 60 Ct", reviews: 18, oldPrice: "PKR 3,790", newPrice: "PKR 10,175",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
+  { id: 4, img: product4, discount: "-15%",rating:"5",packsize:"50 Veg Capsules",Brand:"Natural Factors",sku:"733739006301",country:"USA", title: "Natural Factors Magnesium Chelate 125mg, 90 Ct", reviews: 9, oldPrice: "PKR 3,990", newPrice: "PKR 3,390",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
+  { id: 5, img: product5, discount: "-35%",rating:"5",packsize:"70 Veg Capsules",Brand:"Webster Natural",sku:"733739006301",country:"USA", title: "Get Alyve Women's Daily One A Day Multivitamin, 30 Ct", reviews: 4, oldPrice: "PKR 1,073", newPrice: "PKR 1,650",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
+  { id: 6, img: product6, discount: "-10%",rating:"5",packsize:"80 Veg Capsules",Brand:"NOW",sku:"733739006301",country:"USA", title: "Bundle Pack - Natural Factors Calcium & Magnesium Citrate with D3 + OsteoMove", reviews: 4, oldPrice: "PKR 10,980", newPrice: "PKR 9,882",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
+  { id: 7, img: product7, discount: "-10%",rating:"5",packsize:"30 Veg Capsules",Brand:"Webster Natural",sku:"733739006301",country:"USA", title: "NOW Vitamin C 500mg Chewable Tablets (Orange), 100 Ct", reviews: 4, oldPrice: "PKR 4,950", newPrice: "PKR 4,450",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
+  { id: 8, img: product8, discount: "-10%",rating:"5",packsize:"60 Veg Capsules",Brand:"NOW",sku:"733739006301",country:"USA", title: "Bundle Pack - Natural Factors RxOmega-3 + Coenzyme CoQ10", reviews: 4, oldPrice: "PKR 9,490", newPrice: "PKR 8,541",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
+  { id: 9, img: product9, discount: "-7%",rating:"5",packsize:"20 Veg Capsules",Brand:"Natural Factors",sku:"733739006301",country:"USA", title: "NOW B-100 Sustained Release Tablets, 100 Ct", reviews: 4, oldPrice: "PKR 9,100", newPrice: "PKR 8,450",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
+  { id: 10, img: product10, discount: "-10%",rating:"5",packsize:"90 Veg Capsules",Brand:"NOW",sku:"733739006301",country:"USA", title: "Bundle Pack - Webber Naturals MultiSure For Women + MultiSure For Men", reviews: 4, oldPrice: "PKR 13,980", newPrice: "PKR 12,582",description:"Restores and maintains healthy, balanced intestinal flora FOS (fructoogosaccharides) added as food for bacteria for long-lasting action Supports immune function Counteracts systemic and vaginal Candida albicans yeast overgrowth Prevents urinary..." },
 ];
+
+export const SpecialOffferProducts =products;
 
 const SpecialOffers = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -102,9 +106,10 @@ const SpecialOffers = () => {
 
         {/* Product Cards */}
         <div className="flex justify-center gap-4 sm:gap-6 overflow-hidden transition-transform duration-700 ease-in-out cursor-pointer">
-          {displayProducts.map((product, i) => (
-            <div
-              key={i}
+          {displayProducts.map((product) => (
+            <Link
+            to={`/product/${product.id}`}
+              key={product.id}
               className="relative w-[45%] sm:w-[200px] flex flex-col items-center group"
             >
               {/* Discount Badge */}
@@ -151,7 +156,7 @@ const SpecialOffers = () => {
                   {product.newPrice}
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

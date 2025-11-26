@@ -20,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black text-[#ffffffbf] py-10">
+    <footer className="bg-black text-[#ffffffbf] py-10 sticky">
       <div className="max-w-7xl mx-auto px-6">
         <div
           className={`grid ${isMobile ? "grid-cols-1 divide-y divide-gray-700" : "grid-cols-3 gap-10"
